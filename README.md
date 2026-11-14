@@ -40,4 +40,9 @@ vercel --prod # promote to production
 - **Colors:** edit the `--accent`, `--bg`, `--text` variables at the top of `style.css`.
   Dark mode values are in the `@media (prefers-color-scheme: dark)` block.
 - **Content:** everything is in `index.html`. Add or remove `.entry` blocks
-  under Experience and Projects as needed.
+  under Experience and Projects as needed. Each project needs a `data-slug`
+  (its tab name / terminal folder) and a `data-summary` (one-liner shown by
+  `open` in the terminal). The tabs and the terminal's files are built from
+  the page automatically.
+- **Pages:** the site shows one page at a time (`#about`, `#projects`,
+  `#experience`). Each is a `<section class="page" data-page="…">`.
